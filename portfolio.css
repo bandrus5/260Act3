@@ -45,10 +45,22 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+li a:hover:not(.active) {
     background-color: #111;
 }
 
 .active {
     background-color: #4CAF50;
+}
+
+section {
+ display: flex;
+}
+
+aside {
+ flex: 1
+}
+
+article {
+ flex: 4
 }
